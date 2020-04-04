@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 
-const getWeatherIcon = (Component)=>(
-    <Component size={30} color='blue'/>
-);
+const getWeatherIcon = (Component)=>{
+    const sizeIcon = 30;
+
+    return(
+        <Component className='wicon' size={sizeIcon} color='blue'/>
+    ) 
+}
+
 
 const WeatherTemperature = ({Component, temperature})=>(
-    <div>
+    <div className='weatherTemperatureCont'>
         {getWeatherIcon(Component)}
-        <span>{`${temperature} Cº`}</span>
+        <span className='temperature'>{`${temperature}`}</span>
+        <span className='temperatureType'>{`Cº`}</span>
     </div>
 );
 
