@@ -5,17 +5,14 @@ import WeatherTemperature from './WeatherTemperature';
 import './styles.css';
 
 //Doble destructuring
-const WeatherData = ({data : {temperature,humidity,wind}, weatherStateComponent })=>{
-    const iconStateComponent = weatherStateComponent;
+const WeatherData = ({data : {temperature,humidity,wind,iconState} })=>
     // const {temperature,humidity,wind} = data;
-    
-    return (
+    (
         <div className='weatherDataCont'>
-            <WeatherTemperature Component={iconStateComponent} temperature={temperature} />
+            <WeatherTemperature Component={iconState} temperature={temperature} />
             <WeatherExtraInfo humidity={humidity} wind={wind}/>
         </div>
-    )
-};
+    );
 
 WeatherData.propTypes ={
     'data' : PropTypes.shape({

@@ -6,7 +6,7 @@ const getWeatherIcon = (Component)=>{
     const sizeIcon = 30;
 
     return(
-        <Component className='wicon' size={sizeIcon} color='blue'/>
+        <Component className='wicon' size={sizeIcon} color='red'/>
     ) 
 }
 
