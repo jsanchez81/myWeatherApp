@@ -1,24 +1,24 @@
 import {
     WiAlien,
-    WiBarometer,
     WiCelsius,
-    WiCloudDown,
-    WiCloudRefresh,
-    WiCloudUp,
-    WiCloud,
-    WiCloudy,
+    WiNightPartlyCloudy,
+    WiDaySunny,
+    WiNightSnow,
+    WiRain,
+    WiNightShowers,
+    WiNightSnowThunderstorm
 } from 'weather-icons-react';
 
 
 const WEATHER_STATE = {
     'alien' : WiAlien,
-    'barometer' : WiBarometer,
     'celsius' : WiCelsius,
-    'cloudDown' : WiCloudDown,
-    'cloudRefresh' : WiCloudRefresh,
-    'cloudUp' : WiCloudUp,
-    'cloud' : WiCloud,
-    'dayCloudyW' : WiCloudy
+    'lluvioso' : WiRain,
+    'llovizna' : WiNightShowers,
+    'tormentas' : WiNightSnowThunderstorm,
+    'nieve' : WiNightSnow,
+    'soleado' : WiDaySunny,
+    'nuboso' : WiNightPartlyCloudy
 }
 
 export default WEATHER_STATE;
